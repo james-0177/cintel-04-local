@@ -50,3 +50,7 @@ git add .
 git commit -m "Update GitHub Repository with local build and shiny commands"
 git push -u origin main
 ```
+
+# Customize index.html
+
+Changed title from "Shiny App" to "Pinkston's PyShiny App" and added custom favicon.
