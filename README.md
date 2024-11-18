@@ -26,3 +26,9 @@ py -m pip install --upgrade -r requirements.txt
 ```shell
 py -m pip freeze > requirements.txt
 ```
+
+# Launch app in web browser
+
+```shell
+shiny run --reload --launch-browser penguins/app.py
+```
