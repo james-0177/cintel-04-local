@@ -32,3 +32,21 @@ py -m pip freeze > requirements.txt
 ```shell
 shiny run --reload --launch-browser penguins/app.py
 ```
+
+# Build Client-Side App
+
+```shell
+shiny static-assets remove
+shinylive export penguins docs
+py -m http.server --directory docs --bind localhost 8008
+```
+
+Open web browser (I use Chrome) and navigate to http://localhost:8008
+
+# Update GitHub Repository
+
+```shell
+git add .
+git commit -m "Update GitHub Repository with local build and shiny commands"
+git push -u origin main
+```
